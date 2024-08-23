@@ -1,11 +1,17 @@
 
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 
 function App() {
   return (
     <div>
-<h1>07: React Router DOM starter file</h1>
+<AppNav />
+<Routes>
+  <Route path="/home" element={<Home />} />
+  <Route path="/posts" element={<Posts />} />
+  <Route path="/dashboard" element={<Dashboard />} />
+</Routes>
     </div>
   );
 }
