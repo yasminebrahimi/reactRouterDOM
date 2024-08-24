@@ -2,7 +2,8 @@
 function Home() {
   return (
     <div>
-      Home page
+      <h1>Home Page</h1>
+      <Link to="/posts">See latest posts?</Link>
     </div>
   )
 }
