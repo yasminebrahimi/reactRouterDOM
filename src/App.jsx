@@ -15,13 +15,13 @@ function App() {
     <div>
       <Routes>
         <Route path="/app" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Home />} /> {/* This is the default route under /app */}
           <Route path="posts" element={<Posts />} />
           <Route path="dashboard" element={<Dashboard />} />
-          <Route index element={<Profile/>} >
-            <Route path="profile" element={<Profile />} />
+          <Route path="profile" element={<Profile />}>
+            {/* Nested routes under profile */}
             <Route path="payments" element={<Payments />} />
-        </Route>
+          </Route>
         </Route>
       </Routes>
     </div>
