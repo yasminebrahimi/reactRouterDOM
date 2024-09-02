@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, useSearchParams } from "react-router-dom"
 
 
 
@@ -24,6 +24,7 @@ const posts = [
 function Post() {
     const {id} = useParams(); 
     const post = posts.find((p) => p.id === Number(id)); 
+    const [searchParams, setSearchParams]= useSearchParams()
   return (
   <div> 
     <h1>Single Post </h1>
