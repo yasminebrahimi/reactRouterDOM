@@ -1,10 +1,4 @@
-
 function Profile() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div>Profile Data</div>;
 }
-
-export default Profile
+export default Profile;

@@ -1,10 +1,5 @@
 
 function Payments() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div>Payments detail</div>;
 }
-
-export default Payments
+export default Payments;
